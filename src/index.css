@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Global Screen Width & Viewport Containment:
+   Ensures smooth vertical scrolling and prevents horizontal scrolling/overflow on mobile (Android/Pixel 7a, iOS, tablets).
+*/
+html {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Safe area insets for notches & Android gesture navigation */
+.safe-pb {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+.safe-pt {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Smooth horizontal scroll containers with hidden scrollbars for clean touch swipe */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Break long code lines and words gracefully */
+pre, code, textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+}
