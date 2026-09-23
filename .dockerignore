@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.github
+.env*.local
+coverage
+tests
+*.log
+.DS_Store
+.tsupgrader
+*.tsbuildinfo

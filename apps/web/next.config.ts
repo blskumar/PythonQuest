@@ -4,6 +4,7 @@ import path from "node:path";
 const workspaceRoot = path.resolve(process.cwd(), "../..");
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   reactStrictMode: true,
   outputFileTracingRoot: workspaceRoot,
   turbopack: {
