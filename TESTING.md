@@ -218,6 +218,15 @@ If Vitest is installed in the workspace:
 npx vitest run
 ```
 
+### 3.5. Pre-Push Validation Skill (`pre-push-testing`)
+A dedicated agent skill is configured at [`.agents/skills/pre-push-testing/SKILL.md`](file:///c:/Users/shara/OneDrive/Documents/MVP-PythonQuest/.agents/skills/pre-push-testing/SKILL.md).
+
+Before pushing code changes to GitHub, the agent automatically executes:
+1. `node tests/run-all.mjs` (Ensures all 133 tests across 7 suites pass with 0 failures)
+2. `npm --prefix apps/web run lint` (Ensures 0 ESLint errors/warnings)
+3. `npm --prefix apps/web run build` (Ensures Next.js standalone compilation succeeds)
+
+
 ---
 
 ## 4. Test Coverage Summary
