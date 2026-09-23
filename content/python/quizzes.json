@@ -1,0 +1,114 @@
+{
+  "chapters": [
+    {
+      "order": 1,
+      "title": "Meet Python",
+      "questions": [
+        { "prompt": "Which function displays a value in the console?", "options": ["print()", "show()", "console()", "write()"], "answer": "print()", "hint": "It is Python's most common output function." },
+        { "prompt": "Which value is a string?", "options": ["42", "3.14", "\"Python\"", "True"], "answer": "\"Python\"", "hint": "Text is written inside quotation marks." },
+        { "prompt": "What type is 12?", "options": ["str", "int", "float", "bool"], "answer": "int", "hint": "It is a whole number without a decimal point." },
+        { "prompt": "Which operator checks equality?", "options": ["=", "==", "+=", "=>"], "answer": "==", "hint": "Assignment uses one equals sign; comparison uses two." },
+        { "prompt": "What does quest_xp = 50 do?", "options": ["Compares quest_xp", "Deletes quest_xp", "Assigns 50 to quest_xp", "Prints 50 automatically"], "answer": "Assigns 50 to quest_xp", "hint": "The single equals sign assigns a value." }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Make Decisions",
+      "questions": [
+        { "prompt": "Which keyword starts a conditional block?", "options": ["if", "when", "check", "case"], "answer": "if", "hint": "Python uses this two-letter keyword for the first condition." },
+        { "prompt": "Which block runs when an if condition is false?", "options": ["else", "otherwise", "fallback", "default"], "answer": "else", "hint": "It is the paired alternative to if." },
+        { "prompt": "What does 7 > 3 evaluate to?", "options": ["7", "3", "True", "False"], "answer": "True", "hint": "Seven is greater than three." },
+        { "prompt": "Which operator means not equal?", "options": ["!=", "<>", "=/=", "not="], "answer": "!=", "hint": "The exclamation mark means not." },
+        { "prompt": "What does and require?", "options": ["At least one condition true", "Both conditions true", "Every value numeric", "A loop"], "answer": "Both conditions true", "hint": "and is true only when all combined conditions are true." }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Repeat Yourself",
+      "questions": [
+        { "prompt": "Which loop visits items in a sequence?", "options": ["for", "repeat", "each", "loop"], "answer": "for", "hint": "Use it with a list or range." },
+        { "prompt": "What numbers does range(3) produce?", "options": ["1, 2, 3", "0, 1, 2", "0, 1, 2, 3", "3 only"], "answer": "0, 1, 2", "hint": "range starts at zero and excludes its stop value." },
+        { "prompt": "A while loop repeats while its condition is what?", "options": ["False", "True", "Numeric", "Empty"], "answer": "True", "hint": "The loop continues as long as the condition remains true." },
+        { "prompt": "What prevents a counter loop from running forever?", "options": ["Changing its condition state", "Adding more print calls", "Removing indentation", "Using a string"], "answer": "Changing its condition state", "hint": "The loop must eventually become false." },
+        { "prompt": "What does break do inside a loop?", "options": ["Skips one item", "Ends the loop", "Restarts the loop", "Adds a counter"], "answer": "Ends the loop", "hint": "It exits the nearest loop immediately." }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Lists",
+      "questions": [
+        { "prompt": "Which syntax creates a list?", "options": ["[1, 2]", "(1, 2)", "{1, 2}", "<1, 2>"], "answer": "[1, 2]", "hint": "Lists use square brackets." },
+        { "prompt": "What is the index of the first list item?", "options": ["0", "1", "-1", "first"], "answer": "0", "hint": "Python sequences are zero-indexed." },
+        { "prompt": "Which method adds an item to the end?", "options": ["append()", "push()", "add()", "insert_end()"], "answer": "append()", "hint": "It appends one item." },
+        { "prompt": "What does len(items) return?", "options": ["The first item", "The number of items", "The last index", "A sorted list"], "answer": "The number of items", "hint": "len means length." },
+        { "prompt": "Are Python lists mutable?", "options": ["Yes, they can change", "No, never", "Only when empty", "Only with strings"], "answer": "Yes, they can change", "hint": "You can replace, add, and remove list items." }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Functions",
+      "questions": [
+        { "prompt": "Which keyword defines a function?", "options": ["def", "function", "fun", "define"], "answer": "def", "hint": "It is short for define." },
+        { "prompt": "What is a parameter?", "options": ["Input named by a function", "A printed result", "A loop keyword", "An error"], "answer": "Input named by a function", "hint": "Parameters let functions receive values." },
+        { "prompt": "Which keyword sends a value back?", "options": ["return", "send", "yield_value", "output"], "answer": "return", "hint": "The caller can store the returned result." },
+        { "prompt": "What happens when a function is called?", "options": ["Its body runs", "Python deletes it", "It becomes a list", "It always prints"], "answer": "Its body runs", "hint": "Calling means asking the function to execute." },
+        { "prompt": "Why use functions?", "options": ["Reuse organized logic", "Avoid all variables", "Disable errors", "Make every program shorter"], "answer": "Reuse organized logic", "hint": "Functions package logic for repeated use." }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Strings",
+      "questions": [
+        { "prompt": "Which method makes text lowercase?", "options": ["lower()", "small()", "downcase()", "case()"], "answer": "lower()", "hint": "It describes the resulting case." },
+        { "prompt": "What does word[0] select?", "options": ["The first character", "The last character", "The whole word", "No character"], "answer": "The first character", "hint": "Indexes start at zero." },
+        { "prompt": "What does strip() remove?", "options": ["Leading and trailing whitespace", "All letters", "Numbers", "The first word"], "answer": "Leading and trailing whitespace", "hint": "It is useful for cleaning user input." },
+        { "prompt": "Which syntax creates an f-string?", "options": ["f\"Hello {name}\"", "format\"Hello\"", "string(Hello)", "$Hello"], "answer": "f\"Hello {name}\"", "hint": "Put f before the opening quote." },
+        { "prompt": "What does split() usually return?", "options": ["A list of pieces", "A number", "A boolean", "A file"], "answer": "A list of pieces", "hint": "It separates text around a delimiter." }
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Dictionaries",
+      "questions": [
+        { "prompt": "What does a dictionary store?", "options": ["Key/value pairs", "Only ordered numbers", "Functions only", "Single characters"], "answer": "Key/value pairs", "hint": "Each key points to a value." },
+        { "prompt": "Which syntax reads a key?", "options": ["profile[\"name\"]", "profile(\"name\")", "profile->name", "profile.name()"], "answer": "profile[\"name\"]", "hint": "Dictionary keys use square brackets." },
+        { "prompt": "What does get(key, default) help with?", "options": ["Missing keys", "Sorting keys", "Deleting a dictionary", "Creating a loop"], "answer": "Missing keys", "hint": "It provides a fallback value." },
+        { "prompt": "Which method returns key/value pairs?", "options": ["items()", "pairs()", "both()", "entries_only()"], "answer": "items()", "hint": "Looping over items gives two values." },
+        { "prompt": "Can a dictionary value be a list?", "options": ["Yes", "No", "Only if empty", "Only in Python 2"], "answer": "Yes", "hint": "Dictionary values can be many Python types." }
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Problem Solving",
+      "questions": [
+        { "prompt": "What does a traceback help you find?", "options": ["An error and its location", "Your password", "A faster computer", "A new package"], "answer": "An error and its location", "hint": "Read the error type and line number." },
+        { "prompt": "What does NameError usually mean?", "options": ["A name is unavailable", "A list is too long", "A loop is fast", "A string is empty"], "answer": "A name is unavailable", "hint": "The variable or function name was not defined." },
+        { "prompt": "Why print intermediate values?", "options": ["To trace changing data", "To hide errors", "To install Python", "To create a list"], "answer": "To trace changing data", "hint": "Observe values step by step." },
+        { "prompt": "What is a good first debugging step?", "options": ["Reproduce and read the error", "Rewrite everything", "Delete the test", "Ignore the output"], "answer": "Reproduce and read the error", "hint": "Understand the failure before changing code." },
+        { "prompt": "Why break a problem into steps?", "options": ["Smaller parts are easier to test", "It removes all logic", "It avoids variables", "It guarantees no bugs"], "answer": "Smaller parts are easier to test", "hint": "Small, testable pieces are easier to reason about." }
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Mini Project",
+      "questions": [
+        { "prompt": "What should a guessing game define first?", "options": ["Rules and secret value", "A database server", "A class hierarchy", "A deployment pipeline"], "answer": "Rules and secret value", "hint": "Plan the smallest playable version." },
+        { "prompt": "Why validate a guess?", "options": ["To handle unexpected input", "To make it random", "To remove the loop", "To hide the answer"], "answer": "To handle unexpected input", "hint": "Users may enter values outside the expected range." },
+        { "prompt": "What tracks the number of attempts?", "options": ["A counter", "A string method", "A CSS class", "A dictionary key only"], "answer": "A counter", "hint": "Increment it after each guess." },
+        { "prompt": "When should a guessing loop stop?", "options": ["On success or no attempts left", "Immediately", "Never", "After printing once"], "answer": "On success or no attempts left", "hint": "These are the two game endings." },
+        { "prompt": "Which skill combines game rules and choices?", "options": ["Conditionals", "Comments", "Imports only", "String slicing"], "answer": "Conditionals", "hint": "if/elif/else control outcomes." }
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Final Project",
+      "questions": [
+        { "prompt": "What should an adventure game map?", "options": ["Locations and choices", "Only colors", "Only usernames", "Package versions"], "answer": "Locations and choices", "hint": "Plan how the player moves through the story." },
+        { "prompt": "What can represent player state?", "options": ["A dictionary", "Only a comment", "A CSS selector", "A filename"], "answer": "A dictionary", "hint": "Use keys such as location and items." },
+        { "prompt": "Why use functions in a project?", "options": ["Reuse game actions", "Remove all decisions", "Prevent input", "Avoid testing"], "answer": "Reuse game actions", "hint": "Functions keep actions organized." },
+        { "prompt": "What makes a project playable?", "options": ["A complete small loop", "Many unfinished features", "No ending", "Only documentation"], "answer": "A complete small loop", "hint": "Start with one working path before expanding." },
+        { "prompt": "What is a useful final test?", "options": ["Try each choice and ending", "Read only the first line", "Skip input", "Delete the output"], "answer": "Try each choice and ending", "hint": "Test the behaviors the player can experience." }
+      ]
+    }
+  ]
+}

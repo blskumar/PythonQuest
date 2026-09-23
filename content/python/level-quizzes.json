@@ -1,0 +1,31 @@
+{
+  "chapters": [
+    {
+      "order": 1,
+      "title": "Meet Python",
+      "levels": {
+        "junior": [
+          { "prompt": "Which line prints a friendly message?", "options": ["print(\"Hello\")", "say(\"Hello\")", "show Hello", "write Hello"], "answer": "print(\"Hello\")", "hint": "Python uses a built-in function for output." },
+          { "prompt": "Which value is a whole number?", "options": ["7", "\"seven\"", "7.5", "True"], "answer": "7", "hint": "Whole numbers do not have a decimal point." },
+          { "prompt": "What does name = \"Maya\" do?", "options": ["Stores text in name", "Checks two names", "Deletes name", "Prints name"], "answer": "Stores text in name", "hint": "One equals sign assigns a value." },
+          { "prompt": "Which value means yes/no in Python?", "options": ["True", "\"yes\"", "1.5", "None of these"], "answer": "True", "hint": "Boolean values are True or False." },
+          { "prompt": "What does 2 + 3 produce?", "options": ["5", "23", "\"5\"", "True"], "answer": "5", "hint": "The plus operator adds numbers." }
+        ],
+        "student": [
+          { "prompt": "Which expression returns a string's length?", "options": ["len(text)", "size(text)", "text.length", "count(text)"], "answer": "len(text)", "hint": "Python's built-in length function is len." },
+          { "prompt": "What type is 3.14?", "options": ["float", "int", "str", "bool"], "answer": "float", "hint": "It contains a decimal value." },
+          { "prompt": "What does == compare?", "options": ["Whether values are equal", "Assignment", "Addition", "Types only"], "answer": "Whether values are equal", "hint": "Double equals is the equality operator." },
+          { "prompt": "What is the result of 13 % 5?", "options": ["3", "2", "8", "0"], "answer": "3", "hint": "Modulo returns the remainder." },
+          { "prompt": "Which name follows Python's usual variable naming style?", "options": ["quest_xp", "quest-xp", "Quest XP", "2quest"], "answer": "quest_xp", "hint": "Use lowercase words joined by underscores." }
+        ],
+        "professional": [
+          { "prompt": "Which expression safely reads an optional dictionary value?", "options": ["profile.get(\"role\", \"learner\")", "profile.optional(\"role\")", "get profile role", "profile[?role]"], "answer": "profile.get(\"role\", \"learner\")", "hint": "Use get with a fallback for missing keys." },
+          { "prompt": "What does // perform?", "options": ["Floor division", "Exact decimal division", "Modulo", "Exponentiation"], "answer": "Floor division", "hint": "It divides and rounds down to a whole-number result." },
+          { "prompt": "Why use a function instead of repeating code?", "options": ["To create reusable behavior", "To avoid all inputs", "To disable errors", "To make values global"], "answer": "To create reusable behavior", "hint": "Functions package logic behind a name." },
+          { "prompt": "Which value is immutable?", "options": ["A string", "A list", "A dictionary", "A set"], "answer": "A string", "hint": "String operations return new strings rather than changing them." },
+          { "prompt": "What does type(value) help you inspect?", "options": ["The runtime data type", "The variable's memory address only", "The source file", "The user profile"], "answer": "The runtime data type", "hint": "It reports whether a value is int, str, list, and so on." }
+        ]
+      }
+    }
+  ]
+}

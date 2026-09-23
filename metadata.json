@@ -1,6 +1,0 @@
-{
-  "name": "Python Quest",
-  "description": "Interactive Python learning adventure with age-tailored paths for children, students, and professionals. Features OOP mastery, practical code exercises, credit scoring, milestone awards, and certificates.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

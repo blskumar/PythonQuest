@@ -1,0 +1,108 @@
+{
+  "title": "Python Quest Core Curriculum",
+  "chapters": [
+    {
+      "order": 1,
+      "title": "Meet Python",
+      "overview": "Learn how Python represents information, displays results, and evaluates expressions.",
+      "concepts": [
+        { "name": "Printing output", "explanation": "print() sends a value to the console so you can see what your program is doing.", "example": "print(\"Welcome to Python!\")\nprint(2 + 3)", "practice": "Print your name and the result of 12 multiplied by 4.", "mistake": "Forgetting quotation marks around text or placing the closing parenthesis incorrectly." },
+        { "name": "Strings", "explanation": "A string is text inside matching single or double quotation marks. Strings can contain spaces and punctuation.", "example": "first_name = \"Ada\"\ngreeting = \"Hello, \" + first_name", "practice": "Create a message that combines a learner name with a welcome sentence.", "mistake": "Trying to add a string and a number without converting the number with str()." },
+        { "name": "Integers and floats", "explanation": "Integers are whole numbers. Floats contain a decimal point. Python uses both for calculations.", "example": "lives = 3\nprice = 4.99\ntotal = lives * price", "practice": "Calculate the cost of three notebooks priced at 2.50 each.", "mistake": "Expecting division with / to produce an integer; use // for floor division when appropriate." },
+        { "name": "Booleans and None", "explanation": "A boolean is True or False and is useful for decisions. None represents the absence of a value.", "example": "is_ready = True\nhas_answer = False\nselected_hint = None", "practice": "Create a boolean called has_completed and set it to False.", "mistake": "Writing true or false in lowercase; Python requires True and False." },
+        { "name": "Variables and assignment", "explanation": "A variable is a name pointing to a value. The equals sign assigns a value; it does not ask whether two values are equal.", "example": "quest_xp = 50\nquest_xp = quest_xp + 10\nprint(quest_xp)", "practice": "Create quest_xp with 50, then add 10 bonus XP.", "mistake": "Using a name before assigning it, using spaces in names, or confusing = with ==." },
+        { "name": "Operators and expressions", "explanation": "Arithmetic operators calculate values: +, -, *, /, //, %, and **. Comparisons produce booleans: ==, !=, >, <, >=, and <=.", "example": "score = 20 + 5\npassed = score >= 25\nremainder = 13 % 5", "practice": "Check whether a learner with 240 XP has reached a 250 XP milestone.", "mistake": "Mixing operator precedence; use parentheses to make the intended order clear." }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Make Decisions",
+      "overview": "Teach programs to choose different actions using conditions.",
+      "concepts": [
+        { "name": "Comparisons", "explanation": "Comparison operators produce True or False and let a program test a fact.", "example": "xp = 260\nprint(xp >= 250)", "practice": "Test whether a score is at least 70.", "mistake": "Using = instead of == in a comparison." },
+        { "name": "if and else", "explanation": "if runs a block when its condition is true; else runs when it is false.", "example": "if xp >= 250:\n    print(\"Unlocked\")\nelse:\n    print(\"Keep learning\")", "practice": "Display whether a learner passed a checkpoint.", "mistake": "Missing the colon or indentation after the condition." },
+        { "name": "elif and logical operators", "explanation": "elif handles another case. and, or, and not combine boolean conditions.", "example": "if score >= 90:\n    rank = \"gold\"\nelif score >= 70:\n    rank = \"silver\"\nelse:\n    rank = \"bronze\"", "practice": "Create three progress messages for beginner, growing, and advanced learners.", "mistake": "Putting broad conditions before more specific conditions." }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Repeat Yourself",
+      "overview": "Automate repeated work with loops and ranges.",
+      "concepts": [
+        { "name": "for loops", "explanation": "A for loop visits each item in a sequence one at a time.", "example": "for lesson in [\"Print\", \"Variables\"]:\n    print(lesson)", "practice": "Print each chapter title from a list.", "mistake": "Indenting the loop body incorrectly." },
+        { "name": "range", "explanation": "range creates a sequence of numbers and is useful when you know how many repetitions you need.", "example": "for level in range(1, 4):\n    print(\"Level\", level)", "practice": "Print levels 1 through 5.", "mistake": "Forgetting that the stop value is excluded." },
+        { "name": "while loops", "explanation": "A while loop repeats while a condition remains true. Update its state so it can finish.", "example": "energy = 3\nwhile energy > 0:\n    print(energy)\n    energy -= 1", "practice": "Count down from five to one.", "mistake": "Creating an infinite loop by never changing the condition." }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Lists",
+      "overview": "Store and process ordered collections of values.",
+      "concepts": [
+        { "name": "Creating and indexing", "explanation": "Lists use square brackets and zero-based indexes, so the first item is at position 0.", "example": "chapters = [\"Python\", \"Decisions\"]\nprint(chapters[0])", "practice": "Read the second item from a list of tools.", "mistake": "Using an index equal to the list length." },
+        { "name": "Changing lists", "explanation": "Lists are mutable: items can be replaced, appended, inserted, or removed.", "example": "quests = [\"Print\"]\nquests.append(\"Variables\")\nquests[0] = \"Output\"", "practice": "Add a new lesson and remove an old placeholder.", "mistake": "Expecting append to return the new list; it changes the list in place." },
+        { "name": "List loops", "explanation": "Loop through list items to process every value without repeating code.", "example": "scores = [10, 20, 30]\nfor score in scores:\n    print(score + 5)", "practice": "Print each score after adding a 10 point bonus.", "mistake": "Changing a list while iterating over it without care." }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Functions",
+      "overview": "Package reusable logic into named blocks that accept input and return results.",
+      "concepts": [
+        { "name": "Defining and calling", "explanation": "def creates a function. Calling its name runs the indented body.", "example": "def welcome():\n    print(\"Welcome, explorer!\")\n\nwelcome()", "practice": "Create a function that prints a quest title.", "mistake": "Defining a function without calling it." },
+        { "name": "Parameters", "explanation": "Parameters let a function work with different values supplied by the caller.", "example": "def add_xp(current, bonus):\n    return current + bonus", "practice": "Write a function that accepts a learner name and returns a greeting.", "mistake": "Passing arguments in the wrong order." },
+        { "name": "Return values", "explanation": "return sends a result back to the caller so it can be stored or used in another expression.", "example": "def is_passing(score):\n    return score >= 70", "practice": "Return True when a learner has enough XP to unlock a chapter.", "mistake": "Printing a result when the caller needs a returned value." }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Strings",
+      "overview": "Work confidently with text, formatting, and useful string methods.",
+      "concepts": [
+        { "name": "Indexing and slicing", "explanation": "Strings are sequences, so you can select characters or ranges with indexes.", "example": "word = \"Python\"\nprint(word[0])\nprint(word[0:2])", "practice": "Print the first three letters of a username.", "mistake": "Forgetting that the slice stop position is excluded." },
+        { "name": "Methods", "explanation": "Methods such as lower, upper, strip, replace, and split transform or inspect text.", "example": "raw = \"  Quest  \"\nclean = raw.strip().lower()", "practice": "Normalize a name by removing spaces and making it lowercase.", "mistake": "Forgetting that most string methods return a new string." },
+        { "name": "f-strings", "explanation": "f-strings insert values into readable text using expressions inside braces.", "example": "name = \"Ada\"\nxp = 50\nprint(f\"{name} has {xp} XP\")", "practice": "Build a progress message with a level and XP value.", "mistake": "Leaving out the f before the opening quote." }
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Dictionaries",
+      "overview": "Represent structured information as key/value pairs.",
+      "concepts": [
+        { "name": "Keys and values", "explanation": "A dictionary maps unique keys to values and uses braces with colon-separated pairs.", "example": "learner = {\"name\": \"Ada\", \"level\": 2}\nprint(learner[\"name\"])", "practice": "Create a profile with a name, level, and XP.", "mistake": "Using a missing key without checking for it." },
+        { "name": "get and update", "explanation": "get safely reads optional keys, while assignment updates or adds a value.", "example": "xp = learner.get(\"xp\", 0)\nlearner[\"xp\"] = xp + 50", "practice": "Add a streak field to a learner profile.", "mistake": "Assuming get changes the dictionary; it only reads it." },
+        { "name": "Looping dictionaries", "explanation": "items(), keys(), and values() let you process dictionary data.", "example": "for skill, score in skills.items():\n    print(skill, score)", "practice": "Print every skill and its score.", "mistake": "Modifying keys while looping through the dictionary." }
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Problem Solving",
+      "overview": "Use a repeatable process to understand, test, and fix programs.",
+      "concepts": [
+        { "name": "Read the error", "explanation": "Tracebacks identify the error type and the line where Python noticed the problem.", "example": "# NameError means a name was used before it was defined\nprint(total)", "practice": "Read a traceback and identify the failing line.", "mistake": "Fixing the last line blindly instead of reading the error type." },
+        { "name": "Trace values", "explanation": "Print intermediate values to observe how data changes through a program.", "example": "total = 0\nfor value in [2, 4, 6]:\n    total += value\n    print(\"total:\", total)", "practice": "Trace a loop that calculates a total.", "mistake": "Changing multiple things at once and losing the cause of the bug." },
+        { "name": "Break into steps", "explanation": "Turn a large problem into small inputs, transformations, decisions, and outputs.", "example": "# input -> process -> output\nname = input(\"Name: \")\nmessage = f\"Hello, {name}\"\nprint(message)", "practice": "Describe a quiz scorer as three small steps.", "mistake": "Starting to code before writing down the expected result." }
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Mini Project",
+      "overview": "Combine variables, decisions, loops, and functions in a number guessing game.",
+      "concepts": [
+        { "name": "Plan the game", "explanation": "Define the secret number, user input, attempts, and win condition before coding.", "example": "secret = 7\nattempts = 0", "practice": "Write the rules in plain language first.", "mistake": "Mixing input, game rules, and output into one untestable block." },
+        { "name": "Validate input", "explanation": "Convert input carefully and handle values outside the expected range.", "example": "guess = int(input(\"Guess: \"))\nif guess < 1 or guess > 10:\n    print(\"Choose 1-10\")", "practice": "Reject guesses outside a chosen range.", "mistake": "Assuming every input can be converted to an integer." },
+        { "name": "Use a loop", "explanation": "Repeat guesses until the player wins or runs out of attempts.", "example": "for attempt in range(3):\n    print(\"Attempt\", attempt + 1)", "practice": "Give the player three attempts and a final message.", "mistake": "Forgetting to stop after a correct guess." }
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Final Project",
+      "overview": "Build a small text adventure that combines the core Python skills.",
+      "concepts": [
+        { "name": "Design the story", "explanation": "Map locations, choices, consequences, and a clear ending before implementation.", "example": "locations = {\"cave\": [\"forest\", \"river\"]}", "practice": "Draw three connected locations and two choices.", "mistake": "Creating choices that do not lead anywhere." },
+        { "name": "Model game state", "explanation": "Use dictionaries, lists, and variables to track inventory, health, and location.", "example": "player = {\"location\": \"village\", \"items\": []}", "practice": "Add an item when the player searches a room.", "mistake": "Keeping the same state in several unrelated variables." },
+        { "name": "Combine the skills", "explanation": "Functions keep actions reusable, loops keep the game running, and decisions control outcomes.", "example": "def show_location(player):\n    print(player[\"location\"])", "practice": "Create a playable path with one win and one lose ending.", "mistake": "Adding features before the smallest playable version works." }
+      ]
+    }
+  ]
+}
