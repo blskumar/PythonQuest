@@ -21,7 +21,7 @@ export async function createClient() {
             });
           } catch {
             // Server Components cannot always modify cookies.
-            // Session refresh is handled by proxy.ts.
+            // Session refresh is handled by middleware.ts.
           }
         },
       },
