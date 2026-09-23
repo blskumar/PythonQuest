@@ -1,5 +1,7 @@
 # Python Quest 🐍 — MVP
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fblskumar%2FPythonQuest&root-directory=apps%2Fweb&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY)
+
 A personalized, gamified Python learning platform built with Next.js, Node.js and Supabase.
 
 ## Stack
