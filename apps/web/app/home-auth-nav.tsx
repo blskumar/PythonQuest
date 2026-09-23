@@ -14,16 +14,18 @@ export function HomeHeaderAuth({ initialUser }: HomeAuthNavProps) {
 
   useEffect(() => {
     const supabase = createClient();
-    void supabase.auth.getUser().then(({ data: { user } }) => {
-      setIsLoggedIn(Boolean(user));
+    void supabase.auth.getUser().then((res) => {
+      setIsLoggedIn(Boolean(res?.data?.user));
+    }).catch(() => {
+      setIsLoggedIn(false);
     });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data } = supabase.auth.onAuthStateChange((_event, session) => {
       setIsLoggedIn(Boolean(session?.user));
     });
 
     return () => {
-      subscription.unsubscribe();
+      data?.subscription?.unsubscribe();
     };
   }, []);
 
@@ -55,16 +57,18 @@ export function HomeHeroAuth({ initialUser }: HomeAuthNavProps) {
 
   useEffect(() => {
     const supabase = createClient();
-    void supabase.auth.getUser().then(({ data: { user } }) => {
-      setIsLoggedIn(Boolean(user));
+    void supabase.auth.getUser().then((res) => {
+      setIsLoggedIn(Boolean(res?.data?.user));
+    }).catch(() => {
+      setIsLoggedIn(false);
     });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data } = supabase.auth.onAuthStateChange((_event, session) => {
       setIsLoggedIn(Boolean(session?.user));
     });
 
     return () => {
-      subscription.unsubscribe();
+      data?.subscription?.unsubscribe();
     };
   }, []);
 

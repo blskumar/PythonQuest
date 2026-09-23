@@ -4,8 +4,15 @@ import { HomeHeaderAuth, HomeHeroAuth } from "./home-auth-nav";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function HomePage() {
-  const { data: { user } } = await (await createClient()).auth.getUser();
-  const hasUser = Boolean(user);
+  let hasUser = false;
+  try {
+    const supabase = await createClient();
+    const { data } = await supabase.auth.getUser();
+    hasUser = Boolean(data?.user);
+  } catch (err) {
+    console.error("Failed to check auth state on home page:", err);
+    hasUser = false;
+  }
 
   return (
     <main className="expedition-page px-4 py-6 sm:px-6 sm:py-10">
